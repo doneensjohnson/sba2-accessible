@@ -19,9 +19,9 @@
             <nav>
                 <p  id="nav-bar">
                     <button id="button">Home</button><a href="#/section/home.html"></a>
-                    <button id="button">About Us</button><a href="#/section/aboutus.html"></a>
-                    <button id="button">Services</button><a href="#/section/services.html"></a>
-                    <button id="button">Contact</button><a href="#/section/contact.html"></a>
+                    <a href="#aboutus"><button id="button">About Us</button></a>
+                    <a href="#services"><button id="button">Services</button></a>
+                    <a href="#contact"><button id="button">Contact</button></a>
                 </p>
             </nav>
     </header>
@@ -37,7 +37,7 @@
 
 
 
-     <section class="about">
+     <section class="aboutus" id="aboutus">
         <h2>About Us</h2>
         <p><strong>ADC Mission: </strong>Making websites accessible and compliant with digital accessibility standards.</p>
         <p><strong>Compliance Standards:</strong> • Web Content Accessibility Guidelines (WCAG 2.1) • Americans with Disabilities Act (ADA)</p>
@@ -46,8 +46,7 @@
 
 
 
-    <div class="grid"> 
-
+    <div class="grid" id="services"> 
         <section id="section1"> Website Design 
         <br> 
         <p id="section">We help you get past the barriers on your website so it is legally compliant and potentially increase sales.</p>
@@ -66,7 +65,7 @@
     </div>
 
 
-    <div class="form">
+    <div class="form" id="contact">
     <form action="/contact" method="POST">
 
         <!-- fieldset for account info -->

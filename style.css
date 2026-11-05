@@ -16,6 +16,10 @@
 }
 
 
+html {
+  scroll-behavior: smooth;
+}
+
 #logo {
   display: flex;
   align-items: center;
@@ -88,7 +92,7 @@
 
 
 
-.about {
+.aboutus {
     font-size: 38px;
 }
 
