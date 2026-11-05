@@ -110,6 +110,35 @@
 }
 
 
+.form {
+    font-size: 40px;
+    color: red;
+    border-style:dashed;
+}
+
+#name {
+    font-size: 40px;
+}
+
+
+#email {
+    font-size: 40px;
+}
+
+
+
+#subject {
+    font-size: 40px;
+}
+
+#message {
+    font-size: 40px;
+}
+
+#submit {
+    font-size: 40px;
+    font-weight: bold;
+}
 
 .footer {
   background-color: rgba(45, 200, 6, 0.69);

@@ -66,7 +66,43 @@
     </div>
 
 
-    
+    <div class="form">
+    <form action="/contact" method="POST">
+
+        <!-- fieldset for account info -->
+        <fieldset class="account-info">
+            <!-- legend for account info -->
+          <legend>CREATE AN ACCOUNT</legend>
+          <!-- username -->
+          <label for="name">NAME</label>
+          <input type="text" id="name" placeholder="First & Last Name" />
+          <br>
+          
+          <!-- email -->
+          <label>E-MAIL</label>
+          <input type="text" id="email" placeholder="email@serviceprovider"/>
+            <br>
+            
+            <label>SUBJECT</label>
+          <!-- textarea for larger bodies of text -->
+          <textarea id="subject"
+            placeholder="Subject of your message"></textarea>
+
+            <br>
+          <label>MESSAGE</label>
+          <!-- textarea for larger bodies of text -->
+          <textarea id="message"
+            placeholder="Tell us a bit about yourself or organization, and how we may help you become ADA compliant."></textarea>
+
+        </fieldset>
+
+        <!-- submit button -->
+        <input type="submit" id="button" id="submit" value="SUBMIT">
+
+
+      </form>
+
+    </div>
    
 
     <div class="footer"> 
