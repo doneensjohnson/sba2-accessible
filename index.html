@@ -10,18 +10,18 @@
 <body>
 
     <div class="header"> 
-    <header id="logo">
+    <header id="logo" role="img">
         <img src="images/ADC-logo-box.jpg" alt="ADC Company Logo" />
             <h1 id="adc-title">Accessible Design Co.</h1>
     </div>
 
-    <div>
+    <div role="navigation">
             <nav>
                 <p  id="nav-bar">
                     <button id="button">Home</button><a href="#/section/home.html"></a>
-                    <a href="#aboutus"><button id="button">About Us</button></a>
-                    <a href="#services"><button id="button">Services</button></a>
-                    <a href="#contact"><button id="button">Contact</button></a>
+                    <a href="#aboutus"><button id="button" role="link">About Us</button></a>
+                    <a href="#services"><button id="button" role="link">Services</button></a>
+                    <a href="#contact"><button id="button" role="link">Contact</button></a>
                 </p>
             </nav>
     </header>
@@ -29,7 +29,7 @@
 
     
     <section class="hero"> 
-      <img src="images/hero.webp" alt="diverse group accessing web tools"> </div>
+      <img src="images/hero.webp" alt="diverse group accessing web tools" role="img"> </div>
         </img>
 
         <div class="hero-text"><h1> Making Every Click Count.</h1> </div>
@@ -37,7 +37,7 @@
 
 
 
-     <section class="aboutus" id="aboutus">
+     <section class="aboutus" id="aboutus" role="heading">
         <h2>About Us</h2>
         <p><strong>ADC Mission: </strong>Making websites accessible and compliant with digital accessibility standards.</p>
         <p><strong>Compliance Standards:</strong> • Web Content Accessibility Guidelines (WCAG 2.1) • Americans with Disabilities Act (ADA)</p>
@@ -65,8 +65,8 @@
     </div>
 
 
-    <div class="form" id="contact">
-    <form action="/contact" method="POST">
+    <div class="form" id="contact" role="form">
+    <form action="thankyou.html" method="GET">
 
         <!-- fieldset for account info -->
         <fieldset class="account-info">
@@ -74,33 +74,35 @@
           <legend>CREATE AN ACCOUNT</legend>
           <!-- username -->
           <label for="name">NAME</label>
-          <input type="text" id="name" placeholder="First & Last Name" />
+          <input type="text" id="name" placeholder="First & Last Name" role="textbox"/>
           <br>
           
           <!-- email -->
           <label>E-MAIL</label>
-          <input type="text" id="email" placeholder="email@serviceprovider"/>
+          <input type="text" id="email" placeholder="email@serviceprovider" role="textbox"/>
             <br>
             
             <label>SUBJECT</label>
           <!-- textarea for larger bodies of text -->
           <textarea id="subject"
-            placeholder="Subject of your message"></textarea>
+            placeholder="Subject of your message" role="textbox"></textarea>
 
             <br>
           <label>MESSAGE</label>
           <!-- textarea for larger bodies of text -->
           <textarea id="message"
-            placeholder="Tell us a bit about yourself or organization, and how we may help you become ADA compliant."></textarea>
+            placeholder="Tell us a bit about yourself or organization, and how we may help you become ADA compliant." role="textbox"></textarea>
 
         </fieldset>
 
         <!-- submit button -->
-        <input type="submit" id="button" id="submit" value="SUBMIT">
+        <input type="submit" id="button" id="submit" value="SUBMIT" role="button" aria-label="Click to submit the form">
+        
+             
 
       </form>
-
-          <p id="confirmation" role="status" aria-live="polite"></p>
+        
+           <div id="confirmation" role="status" aria-live="polite" role=hidden role="alert">Form submitted successfully!</div>
 
     </div>
    
@@ -108,7 +110,7 @@
     <div class="footer"> 
         <footer id="footer">
                 <nav>
-                    <img src="images/social-media.png" alt="social media icons"> 
+                    <img src="images/social-media.png" alt="social media icons" role="img"> 
                     <p>ph: 999-999-9999 | email: accessibledesignco@noemail.com | 999 Accessible Lane - Design, CO 99999</p>
                     <a href="/privacy">Privacy Policy</a>   |   <a href="/terms">Terms of Service</a>
                     <p>© 2026 Accessible Design Co. All rights reserved.</p>
