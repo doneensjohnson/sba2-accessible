@@ -2,7 +2,6 @@
 
 
 #button {
-    display: flex;
     background-color: rgb(237, 184, 85);
     color: black;
     display: grid;
@@ -11,7 +10,7 @@
     border: 7px solid black;
     border-radius: 10px;
     padding: 1rem;
-    width: 400px;
+    width: 300px;
     margin: 10px
 }
 
@@ -27,7 +26,7 @@ html {
 }
 
 #logo img {
-  width: 400px;
+  width: 300px;
   height: auto;
 }
 
@@ -170,12 +169,37 @@ html {
 
 #footer {
     font-size: 20px;
-    display: ;
 }
 
 
-@media (min-width: 600px) {
-  .gallery {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+/* Base styles (e.g., Mobile First) */
+body {
+    background-color: white;
+    font-size: 16px;
+}
+
+
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 100%;      
+  padding: 15px;     
+  box-sizing: border-box; 
+}
+
+
+@media (width >= 768px) {
+  .container {
+    width: 85%;      
+    max-width: 1200px;
+    margin: 0 auto;   
   }
 }
